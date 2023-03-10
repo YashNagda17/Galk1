@@ -1,0 +1,133 @@
+.attendance-calendar-container {
+    position: relative;
+    width: 98%;
+    height: 98%;
+    min-width: 500px;
+    min-height: 500px;
+
+    /* border: 1px solid white; */
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); */
+    background-color: #fff;
+}
+
+.attendance-calendar-control-container {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.attendance-calendar-control-header-text {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.attendance-calendar-control-header-arrow-container {
+    width: 50px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.attendance-calendar-control-header-arrow {
+    font-size: 20px;
+}
+
+.attendance-calendar-control-header-arrow:hover {
+    font-size: 30px;
+}
+
+.attendance-calendar-week-name-container {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+.attendance-calendar-week-name {
+    position: relative;
+    height: 50px;
+    width: 13%;
+    display: flex;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: #3977f5;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.attendance-calendar-rows {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-top: 1px solid #e8e8e8;
+}
+
+.attendance-calendar-rows>span:hover {
+    border-radius: 8px 0 0 8px;
+    background-color: #0ab5cc;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.attendance-calendar-day-entry-row {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
+
+.attendance-calendar-day-entry {
+    position: relative;
+    height: 75px;
+    width: 13%;
+    display: flex;
+    margin: 2px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.attendance-calendar-day-entry-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.attendance-calendar-day-entry-contitional {
+    border: 1px solid rgb(231, 228, 228);
+
+}
+
+.attendance-calendar-day-entry-contitional:hover {
+    background-color: #dce7f5;
+    cursor: pointer;
+}
+
+.attendance-calendar-empty-calendar {
+    position: relative;
+    width: 98%;
+    height: 98%;
+    min-width: 500px;
+    min-height: 500px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 400;
+}

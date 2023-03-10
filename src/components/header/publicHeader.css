@@ -1,0 +1,272 @@
+.brand-logo {
+	max-height: 54px;
+	/* margin: 5px 0; */
+	vertical-align: middle;
+}
+.headerBanner {
+	position: relative;
+	height: 100vh;
+	background-size: cover;
+	/* background-color: #202124; */
+	background-color: #0b4d8e;
+	opacity: 0.8;
+
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+}
+.headerBanner::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	/* background-image: linear-gradient(rgba(26, 162, 184, 0.5), rgba(0, 0, 0, 1)); */
+	background-image: linear-gradient(to bottom, #0b4d8e, #001529);
+	opacity: 0.5;
+	background-size: 100% 100%;
+}
+.headerBanner .navbar-light {
+	position: absolute;
+	top: 0px;
+	background: transparent;
+	border: none;
+	width: 100%;
+}
+.headerBanner .navbar-default {
+	position: absolute;
+	top: 0px;
+	background: transparent;
+	border: none;
+	width: 100%;
+	box-shadow: none;
+}
+.navbar {
+	position: relative;
+	min-height: 50px;
+	/* margin-bottom: 20px; */
+	border: 1px solid transparent;
+	box-shadow: none;
+}
+.navbarL {
+	position: relative;
+	min-height: 50px;
+	/* margin-bottom: 20px; */
+	border: 1px solid transparent;
+	box-shadow: none;
+}
+.navbar:before {
+	content: " ";
+	display: table;
+}
+.navbarL:before {
+	content: " ";
+	display: table;
+}
+
+.navbar-brand > img {
+	display: block;
+}
+.img {
+	vertical-align: middle;
+}
+.container-fluid {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.navbar > .container,
+.navbar > .container-fluid {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: left;
+}
+.navbar-header {
+	float: left;
+}
+.navbar-header:before,
+.container-fluid:before,
+.navbar-header:before {
+	content: " ";
+	display: table;
+}
+
+.navbar-brand {
+	float: left;
+	/* padding: 15px 15px; */
+	font-size: 18px;
+	line-height: 20px;
+	height: 50px;
+}
+.navbar-brand a {
+	text-decoration: none;
+	background-color: transparent;
+}
+.headerBanner .navbar-default {
+	position: absolute;
+	top: 0px;
+	background: transparent;
+	border: none;
+	width: 100%;
+}
+
+.bannerText {
+	position: absolute;
+	top: 40%;
+	padding: 20px;
+}
+.bannerText p {
+	text-align: center;
+	color: #fff;
+	text-shadow: -2px 1px 1px #202065;
+	/* width: 960px; */
+	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.68);
+	font-family: HiraginoSans-W5;
+	font-size: 20px;
+	line-height: 1.37;
+	color: #ffffff;
+}
+.bannerText h1 {
+	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.68);
+	font-family: HiraginoSans-W5;
+	font-size: 30px;
+	line-height: 1.37;
+	text-align: center;
+	color: #ffffff;
+}
+.bannerLogo {
+	position: absolute;
+	top: 20px;
+	left: 10px;
+}
+.bannerAction {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+}
+.signButton {
+	position: absolute;
+	top: 75%;
+}
+.btn-custome:hover {
+	background: #fff;
+	color: #820282;
+}
+.btn-custome {
+	padding: 6px 30px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	background: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+	border-radius: 7px;
+	margin: 0px 10px;
+	transition: 0.3s;
+	width: 150px;
+	width: 157px;
+	height: 44px;
+	border-radius: 12px;
+	border: solid 2.4px #ffffff;
+}
+
+.signUpButton {
+	margin-right: 0.5rem;
+	border-radius: 12px;
+	font-family: Avenir;
+	min-width: 200px;
+}
+.signInButton {
+	margin-right: 0.5rem;
+	border-radius: 12px;
+	font-family: Avenir;
+	min-width: 200px;
+}
+
+.text-center-header {
+	width: 960px;
+	height: 84px;
+	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.68);
+	font-family: HiraginoSans-W5;
+	font-size: 42px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.37;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+}
+.btn-custome-reverse:hover {
+	background: #820282;
+	color: #fff;
+}
+.crausel {
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+@media only screen and (min-width: 768px) {
+	.container > .navbar-header,
+	.container-fluid > .navbar-header,
+	.container > .navbar-collapse,
+	.container-fluid > .navbar-collapse {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.navbar-header {
+		float: left;
+	}
+	.navbar {
+		/* border-radius: 4px; */
+		width: 100%;
+		top: 0;
+		border-bottom: 1px solid #3990b7;
+		opacity: 0.9;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.bannerText {
+		position: absolute;
+		top: 30%;
+	}
+	.bannerText p {
+		text-align: center;
+		color: #fff;
+		text-shadow: -2px 1px 1px #202065;
+		/* width: 960px; */
+		text-shadow: 0 4px 4px rgba(0, 0, 0, 0.68);
+		font-family: HiraginoSans-W5;
+		font-size: 18px;
+		line-height: 1.5;
+		color: #ffffff;
+	}
+	.bannerText h1 {
+		text-shadow: 0 4px 4px rgba(0, 0, 0, 0.68);
+		font-family: HiraginoSans-W5;
+		font-size: 30px;
+		line-height: 1.5;
+		text-align: center;
+		color: #ffffff;
+	}
+	.bannerLogo {
+		position: absolute;
+		top: 20px;
+		left: auto;
+	}
+}

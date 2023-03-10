@@ -1,0 +1,182 @@
+.studentDetails_container {
+	width: 100%;
+	margin: 0px auto;
+	background: #fff;
+	border-radius: 5px;
+	/* padding: 15px; */
+	box-sizing: border-box;
+}
+.studentDetails_container_top {
+	width: 100%;
+	text-align: center;
+}
+.studentDetails_container_top p {
+	color: rgba(39, 63, 90, 0.7);
+	font-weight: 400;
+	margin: 0px;
+	font-size: 14px;
+}
+.studentDetails_container_top h3 {
+	font-size: 20px;
+	color: #273f5a;
+	margin: 10px 0px;
+	font-weight: 400;
+}
+.studentDetails_container_top img {
+	width: 115px;
+	height: 115px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.31);
+	object-fit: cover;
+}
+.studentDetails_bottomList p {
+	margin: 0px;
+	color: #969ea8;
+	font-weight: 600;
+}
+.studentDetails_bottomList {
+	border-radius: 5px;
+	background-color: #fbfbfc;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.studentDetails_bottomList h2 {
+	font-size: 14px;
+	color: #273f5a;
+	margin: 0px;
+	font-weight: 400;
+}
+.studentDetails_container_top_topList {
+	text-align: center;
+	padding-left: unset;
+}
+.studentDetails_container_top_topList li h2 {
+	color: #273f5a;
+	margin: 0px;
+	font-size: 14px;
+}
+.studentDetails_container_top_topList li h3 .fa-star {
+	margin: 0px 2px;
+	color: #ffc201;
+}
+.studentDetails_container_top_topList li h3 {
+	color: #ffc201;
+	margin: 0px;
+	font-size: 14px;
+}
+.studentDetails_container_top_topList li p {
+	color: #969ea8;
+	font-weight: 600;
+	font-size: 13px;
+}
+.studentDetails_container_top_topList li:last-child {
+	border: none;
+}
+.studentDetails_container_top_topList li {
+	border-right: 1px solid #7096c2;
+	display: inline-block;
+	padding: 0px 20px;
+}
+.studentDetails_bottomUL {
+	display: flex;
+	justify-content: space-around;
+}
+.studentDetails_bottomUL li {
+	border: none;
+	/* width: 30%; */
+	padding: 0px;
+}
+.studentDetails_bottomUL li h2 {
+	font-size: 14px;
+}
+/* .internship_candidateDetails_cardUL {
+} */
+.studentDetails_bottom_cardUL li {
+	display: inline-block;
+	padding: 2px 12px;
+	font-size: 12px;
+	border-radius: 2px;
+	background-color: #ecf0f5;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+.studentDetails_introvideo {
+	display: flex;
+	justify-content: center;
+	background-color: slategray;
+}
+.studentDetails_introvideo video {
+	height: 400px;
+	width: 700px;
+}
+.studentDetails_hazyName {
+	font-size: 1.5rem;
+	color: transparent;
+	text-shadow: 0 0 10px #fff;
+	font-weight: 500px;
+	margin-bottom: 0;
+}
+.studentDetails_text-center {
+	text-align: center;
+}
+.studentDetails_w-100 {
+	width: 100%;
+}
+.studentDetails_name {
+	color: #17a2b8;
+}
+.studentDetails_iq-mt-30 {
+	margin-top: 30px !important;
+}
+.studentDetails_iq-mb-10 {
+	margin-bottom: 10px !important;
+}
+.studentDetails_text-left {
+	text-align: left;
+}
+.studentDetails_iq-mt-10 {
+	margin-top: 10px !important;
+}
+
+/* Styles for experience section */
+.studentDetails_experience_container {
+	background: #fbfbfb;
+	padding: 10px;
+}
+.studentDetails_experience_container > .ant-tabs-card .ant-tabs-content {
+	min-height: 200px;
+	margin-top: -16px;
+}
+.studentDetails_experience_container
+	> .ant-tabs-card
+	.ant-tabs-content
+	> .ant-tabs-tabpane {
+	padding: 16px;
+	background: #fff;
+}
+
+.candidateDetails_experience_project_skills {
+	list-style: none;
+	padding: 0;
+	display: contents;
+	margin-top: 10px;
+}
+.candidateDetails_experience_project_skills li {
+	display: inline-block;
+	padding: 2px 10px;
+	font-size: 10px;
+	border-radius: 2px;
+	background-color: #ecf0f5;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-right: 5px;
+	margin-top: 10px;
+	color: #777;
+	width: 95px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: center;
+}

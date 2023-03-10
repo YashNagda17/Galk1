@@ -1,0 +1,107 @@
+.notificationContentParent{
+	position:relative;
+	width: 100%;
+	height: 100%;
+}
+.notificationHeader{
+	position: relative;
+	width: 100%;
+	height: 30px;
+	margin: 0px;
+	padding: 0px;
+	border-bottom: 1px solid silver;
+	display: flex;
+	align-items: center;font-weight: 500;
+	padding-left: 10px;
+	font-size: 17px;
+    background-color: rgb(228, 231, 231);
+}
+.notificationBody{
+	position: relative;
+	width: 100%;
+	height: calc(100% - 60px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/* width */
+.notificationBody::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+.notificationBody::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.notificationBody::-webkit-scrollbar-thumb {
+  background: rgb(15, 135, 240);
+}
+.notificationBody::-webkit-scrollbar-thumb:hover {
+  background: rgb(15, 135, 240);
+}
+.notificationBody>{
+	height: fit-content;
+}
+.notificationFooter{
+	position: relative;
+	width: 100%;
+	height: 30px;
+	border-top: 1px solid silver;
+    background-color: rgb(228, 231, 231);
+}
+.msgDiv{
+    position: relative;
+    display: flex;
+    height: 90px;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid silver;
+}
+.msgDiv:hover{
+    background-color: rgb(133, 191, 241) !important;
+}
+.msgDivAvatar{
+    display: flex;
+    position: relative;
+    width: 90px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.msgDivBody{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 90px);
+    height: 100%;
+    
+}
+.msgDivBodydate{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content:flex-start;
+    align-items: center;
+}
+.msgDivBodydate>span{
+    margin-left:5px
+}
+.msgBodyText{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+.msgDivBodyTitle{
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+    
+}

@@ -1,0 +1,27 @@
+.ant-menu {
+	background-color: #042e58 !important;
+	color: #f2f2f2 !important;
+}
+.ant-menu a {
+	color: #f2f2f2 !important;
+	font-size: 14px;
+}
+.ant-menu svg {
+	color: #f2f2f2 !important;
+}
+.ant-menu .ant-menu-item-icon {
+	font-size: 20px !important;
+}
+
+.ant-menu-inline {
+	border-right: 1px solid #042e58 !important;
+}
+.ant-menu-item {
+	padding-left: 35px !important;
+}
+.ant-menu-item-selected {
+	background-color: #001529 !important;
+}
+.ant-menu-item-group-title {
+	color: #999 !important;
+}

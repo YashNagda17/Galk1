@@ -1,0 +1,189 @@
+.certificate_card_navLink {
+	text-decoration: "none";
+}
+.certificate_card_navLink:hover {
+	text-decoration: "none";
+}
+.certificate_card_cardRoot {
+	cursor: pointer;
+	margin-bottom: 15px;
+	padding: 8px;
+}
+.certificate_card_cardRoot:hover {
+	border: 1px solid #bcbcbc;
+	transition-property: "border";
+	transition-duration: ".4s, .8s";
+}
+.certificate_card_title {
+	color: #0b4d8e;
+	letter-spacing: "0.32px";
+	font-size: 14px;
+	font-weight: 700;
+}
+.certificate_card_skill {
+	color: #777;
+	background-color: #ecf0f5;
+	padding: 2px 10px;
+	min-width: 70px;
+	border-radius: 4px;
+	text-align: center;
+}
+.certificate_card_skill:hover {
+	color: #000;
+}
+.certificate_card_skillRoot {
+	display: flex;
+	justify-content: start;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+.certificate_card_skillRoot > * {
+	margin-right: 10px;
+}
+.certificate_card_statusPendingApproval {
+	color: #fff;
+	background-color: #f0ad4e;
+	border-radius: 18px;
+	padding: 0px 10px;
+	text-align: center;
+	margin-left: 10px;
+}
+.certificate_card_statusApproved {
+	color: #fff;
+	background-color: #5cb85c;
+	border-radius: 18px;
+	padding: 0px 10px;
+	text-align: center;
+	margin-left: 10px;
+}
+.certificate_card_description {
+	color: #98a8b7;
+	white-space: pre-wrap;
+}
+.certificate_card_actionContainer > div {
+	text-align: center;
+}
+.certificate_card_actionContainer > div:last-child {
+	text-align: right;
+}
+.certificate_card_actionContainer > div:first-child {
+	text-align: left;
+}
+.certificate_card_createDate {
+	color: #98a8b7;
+}
+.certificate_card_applicationIcon {
+	font-size: 14px;
+	margin-right: 10px;
+	margin-bottom: 2px;
+}
+.certificate_card_actionLink {
+	cursor: pointer;
+}
+.certificate_card_actionLink:hover {
+	color: #075ff3;
+}
+.certificate_card_actionLink_danger {
+	cursor: pointer;
+}
+.certificate_card_actionLink_danger:hover {
+	color: #f32a07;
+}
+
+/* Styles for Exam details card */
+.examSummaryContainer {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0px 15%;
+	display: grid;
+	grid-template-columns: 1.2fr 1fr 1fr;
+	grid-gap: 10px;
+	width: 100%;
+	text-align: center;
+}
+.examOverallScore,
+.examOverallGrade,
+.examOverallRanking {
+	border-radius: 4px;
+	padding: 20px;
+	height: 150px;
+	background-color: #f2f2f2;
+}
+.examGraphContainer {
+	background-color: #f2f2f2;
+	height: 200px;
+	border-radius: 4px;
+	margin-right: 60px;
+	margin-left: 60px;
+}
+.examStandardContainer {
+	background-color: #f2f2f2;
+	border-radius: 4px;
+	margin-right: 15%;
+	margin-left: 15%;
+	margin-bottom: 10px;
+}
+.examStandardContainer table {
+	width: 100%;
+	table-layout: fixed;
+}
+.examStandardContainer table tr:not(:last-child) {
+	border-bottom: 2px solid #fff;
+}
+.examStandardContainer table td {
+	padding: 0.5rem 0;
+	text-align: center;
+}
+.examReviewComment {
+	margin-bottom: 20px;
+}
+.examReportContainer {
+}
+
+.sectionTitle {
+	color: #6a6a6a;
+	display: block;
+	font-size: 1rem;
+	font-weight: 700;
+}
+.sectionData {
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 2rem;
+	margin: 10px 0px;
+}
+.sectionFooter {
+}
+.tableLabel {
+	color: #6a6a6a;
+	display: block;
+	font-size: 1rem;
+	font-weight: 700;
+}
+.tableLabelData {
+	font-weight: 700;
+	color: #1073d5;
+}
+
+.examPageTitle {
+	color: #4a4a4a;
+	font-size: 1.25rem;
+	line-height: 1.25;
+}
+
+.examReportTable {
+	width: 100%;
+	table-layout: fixed;
+	/* border: 1px solid #fff; */
+}
+.examReportTable thead {
+	background-color: #f2f2f2;
+	color: #6a6a6a;
+}
+.examReportTable tr:not(:last-child) {
+	/* border-bottom: 1px solid #6a6a6a; */
+}
+.examReportTable td {
+	padding: 0.5rem 0;
+	text-align: center;
+}

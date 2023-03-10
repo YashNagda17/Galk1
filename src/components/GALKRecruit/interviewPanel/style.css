@@ -1,0 +1,13 @@
+.interviewPanel-container {
+	width: 100%;
+	height: 100%;
+}
+.interviewPanel_tabs {
+	height: 100%;
+}
+.interviewPanel_tabs .ant-tabs-content-holder .ant-tabs-content {
+	height: 100% !important;
+}
+.interviewPanel_tabPane {
+	height: 100%;
+}

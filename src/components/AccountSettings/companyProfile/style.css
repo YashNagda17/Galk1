@@ -1,0 +1,216 @@
+.companyDetails_logo_container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.companyDetails_logo_image_container {
+	background-color: #f2f2f2;
+	display: flex;
+	height: 200px;
+	flex-direction: column;
+	justify-content: center;
+}
+.companyDetails_logo_image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.companyDetails_coverPhoto_image_container {
+	background-color: #f2f2f2;
+	display: flex;
+	height: 200px;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 20px;
+}
+.companyDetails_coverPhoto_image {
+	width: 100%;
+	height: 100%;
+	margin-right: 10px;
+	object-fit: cover;
+}
+.companyDetails_logo_rule {
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 30px;
+	margin-right: 10px;
+}
+
+/* Styles for student view of company profile */
+
+.studentView_companyProfile_container {
+	width: 100%;
+	margin: auto;
+	padding: 20px;
+}
+
+.actionContainer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.studentView_companyProfile_container_grid {
+	display: -ms-grid;
+	display: grid;
+	grid-template-areas:
+		"top"
+		"about"
+		"exp";
+	grid-gap: 1rem;
+}
+
+.studentView_companyProfile_container_grid .studentView_grid_profileTop {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+	grid-area: top;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	text-align: left;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.studentView_companyProfile_container_grid .studentView_grid_profileTop img {
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	margin-bottom: 10px;
+	border-radius: 4px;
+}
+
+.studentView_companyProfile_container_grid
+	.studentView_grid_profileTop
+	.icons
+	a {
+	color: #fff;
+}
+
+.studentView_companyProfile_container_grid
+	.studentView_grid_profileTop
+	.icons
+	a:hover {
+	color: #343a40;
+}
+
+.studentView_companyProfile_container_grid .studentView_grid_profileAbout {
+	-ms-grid-row: 2;
+	-ms-grid-column: 1;
+	grid-area: about;
+	text-align: left;
+	padding: 20px;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.16),
+		0 0px 10px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.16), 0 0px 10px 0 rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+}
+
+.studentView_grid_profileAbout h2 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #3990b7;
+}
+.studentView_grid_profileAbout p {
+	margin-bottom: 0;
+	white-space: pre-wrap;
+	color: #666;
+}
+
+.studentView_companyProfile_container_grid .profile-exp .skills {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	text-align: left;
+}
+
+.studentView_companyProfile_container_grid .profile-exp {
+	-ms-grid-row: 3;
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 5;
+	grid-area: exp;
+}
+
+.studentView_companyProfile_container_grid .profile-exp > div {
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: #ccc 1px dotted;
+}
+
+.studentView_companyProfile_container_grid .profile-exp > div:last-child {
+	border: none;
+}
+.studentView_companyProfile_container_grid .profile-exp > div:first-child {
+	border-bottom: #333 2px ridge;
+	padding-bottom: 0px;
+}
+.studentView_companyProfile_container_grid .profile-exp > div p {
+	margin: 0.5rem 0;
+}
+
+.studentView_grid_profileTop .profileTop_companyName {
+	color: #cddc39;
+	font-weight: bold;
+	font-size: 18px;
+}
+.studentView_grid_profileTop .profileTop_industry {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+}
+.studentView_grid_profileTop .profileTop_address {
+	color: #fff;
+	font-size: 14px;
+}
+.studentView_grid_profileTop .profileTop_website {
+	color: #fff;
+	font-size: 14px;
+	margin-top: auto;
+}
+.studentView_grid_profileTop p {
+	margin-bottom: 0px;
+}
+.studentView_grid_profileTop a {
+	color: #fff;
+}
+.studentView_grid_profileTop a:hover {
+	/* color: #3990b7; */
+	text-decoration: underline;
+}
+.studentView_grid_profileTop .actionContainer {
+	width: 100%;
+	color: #fff;
+	align-items: unset;
+}
+.studentView_grid_profileTop .actionContainer i {
+	color: #fff;
+}
+.studentView_grid_profileTop .actionContainer i:hover {
+	color: #3990b7;
+}

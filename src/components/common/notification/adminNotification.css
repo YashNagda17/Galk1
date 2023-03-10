@@ -1,0 +1,11 @@
+#headId{
+    align-items: center;
+    display: flex;
+}
+#titleId{
+    font-size: medium;
+    font-weight: 400;
+}
+.timeId{
+    font-weight: 300;
+}

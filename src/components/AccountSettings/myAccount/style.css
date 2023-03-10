@@ -1,0 +1,23 @@
+.companyDetails_logo_container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.companyDetails_logo_image_container {
+	background-color: #f2f2f2;
+	display: flex;
+	height: 200px;
+	flex-direction: column;
+	justify-content: center;
+}
+.companyDetails_logo_image {
+	width: 200px;
+}
+.companyDetails_logo_rule {
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 30px;
+	margin-right: 10px;
+}

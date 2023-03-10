@@ -1,0 +1,19 @@
+.appModule_dropdown_option {
+	/* background-color: #001529 !important;
+	color: #f2f2f2 !important; */
+}
+.appModule_dropdown_root {
+	width: 90%;
+	margin-top: 20px !important;
+	color: #f2f2f2 !important;
+}
+.appModule_dropdown_root .ant-select-selector {
+	background-color: #001529 !important;
+	border-color: #3977f5 !important;
+}
+.appModule_dropdown_root .ant-select-arrow {
+	color: #3977f5 !important;
+}
+.appModule_dropdown_root .ant-select-open {
+	background-color: #001529 !important;
+}

@@ -1,0 +1,177 @@
+.cardBox .milageText::after {
+	content: "";
+	background-image: url("https://firebasestorage.googleapis.com/v0/b/piit-52003_galkcommon/o/card-chip1x.png?alt=media&token=1233fe1f-de81-47b7-a6ec-19770468199c");
+	position: absolute;
+	width: 44px;
+	height: 32px;
+	background-size: 100%;
+	/* bottom: -6px; */
+	bottom: -40px;
+	left: 13px;
+}
+.milageText {
+	position: relative;
+	font-size: 17px !important;
+}
+.pointText {
+	padding: 7px 15px !important;
+	margin-top: 40px !important;
+	line-height: initial !important;
+	height: auto !important;
+	font-size: 16px !important;
+}
+.pointText span {
+	margin-left: 10px;
+	font-size: 16px;
+}
+.cardBox h3 {
+	width: 216px;
+	height: 42px;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.8), 0 -3px 3px rgba(255, 255, 255, 0.3),
+		0 0 2px rgba(0, 0, 0, 0.8), 0 -2px 0 rgba(0, 0, 0, 0.3), 0 2px 2px #ffffff;
+	background-image: linear-gradient(
+		to top,
+		#c8c8c8 84%,
+		#c8c8c8 71%,
+		#ffffff 67%,
+		#ffffff 57%,
+		#c8c8c8 51%,
+		#c8c8c8 40%,
+		#ffffff 34%,
+		#ffffff 21%
+	);
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.17;
+	letter-spacing: -0.4px;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: rgb(255, 255, 255);
+	padding: 17px 15px;
+	margin: 0px;
+	position: relative;
+}
+.rankText {
+	margin: 0px;
+	padding: 0px;
+	padding: 0px 15px 0px 15px;
+	font-size: 12px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	color: #fff;
+	letter-spacing: 0.5px;
+}
+.cardBox {
+	margin: 0px auto;
+	width: 100%;
+	height: 180px;
+	position: relative;
+	overflow: hidden;
+	/*border: 1px solid;*/
+	border-radius: 10px;
+	background: rgb(56, 143, 183);
+	background: linear-gradient(
+		145deg,
+		rgba(56, 143, 183, 1) 0%,
+		rgba(154, 214, 240, 1) 49%,
+		rgba(5, 97, 141, 1) 100%
+	);
+	margin-bottom: 20px;
+	box-shadow: 6px 6px 8px #b3b3b3;
+}
+.companyText {
+	padding-top: 5px !important;
+	font-size: 14px !important;
+	padding-bottom: 0px !important;
+	height: initial !important;
+}
+.dashboard-basicInformation-card-logo {
+	width: 80px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.dateBox h3 {
+	height: initial;
+	padding: 3px 0px;
+	margin: 0px;
+	font-size: 16px;
+	top: -2px;
+}
+.dateBox .lable2::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: 6px solid white;
+	right: -12px;
+	top: 4px;
+}
+.dateBox .lable2 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 7px;
+	position: absolute;
+	font-family: "Montserrat", sans-serif;
+	color: #fff;
+	left: -45px;
+	white-space: pre-wrap;
+}
+.dateBox .label1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 7px;
+	position: absolute;
+	top: -15px;
+	font-family: "Montserrat", sans-serif;
+	color: #fff;
+	left: 0px;
+	right: 0px;
+	margin: 0px auto;
+}
+.dateBox {
+	position: absolute;
+	width: 70px;
+	right: 0px;
+	bottom: 8px;
+	height: 30px;
+}
+.membershipTag {
+	background-color: #b3d9ff;
+	border-radius: 20px;
+	padding: 0px 20px;
+	text-transform: capitalize;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.dashboard-basicInformation-card-container {
+	width: 100%;
+	height: 525px;
+	overflow-y: auto;
+	margin-bottom: 20px !important;
+}
+.dashboard-bottom-card-container {
+	width: 100%;
+	/* height: 525px; */
+	margin-bottom: 16px;
+	overflow: auto;
+}
+.dashboard_department_card_container {
+	width: 100%;
+	height: 525px;
+	overflow-y: auto;
+}
+
+/* styles for company stat */
+.dashboard_companyStat_card_count {
+	color: #008fb3;
+	/* font-weight: 600; */
+	font-size: 22px;
+}

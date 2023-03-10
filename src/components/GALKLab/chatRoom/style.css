@@ -1,0 +1,259 @@
+.chatRoom_chatRoot {
+	box-shadow: 0px 0px 8px 1px #000;
+}
+.chatRoom_userList_container {
+	height: 100%;
+	overflow: auto;
+	background-color: #042e58 !important;
+	flex: none !important;
+	width: 240px !important;
+	min-width: 240px !important;
+	max-width: 240px !important;
+	padding: 10px;
+}
+.chatRoom_userList-createButton {
+	width: 100%;
+	margin-top: 8px;
+	margin-bottom: 15px;
+}
+.chatRoom_chatRoot_userListMenu {
+	width: 100%;
+	min-height: 80%;
+}
+.chatRoom_userListMenu-unreadMsg {
+	color: "red";
+	position: absolute;
+	top: 0;
+	right: 5px;
+}
+.chatRoom_chatInfo-container {
+	/* background-color: #1f1f1f; */
+	text-align: center;
+	padding: 8px 16px;
+}
+.chatRoom_messageList-header {
+	padding: 8px 16px;
+	height: 50px;
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+}
+.chatRoom_messageList-messages {
+	padding: 20px 25px;
+	height: 60vh;
+	overflow-y: auto;
+	box-sizing: border-box;
+	position: absolute;
+	width: 100%;
+	margin-top: 50px;
+}
+.chatRoom_messageList-sentByMe {
+	float: right;
+	clear: both;
+	box-sizing: border-box;
+	word-wrap: break-word;
+	margin-top: 10px;
+	background-color: rgb(11, 128, 244, 0.1);
+	min-width: 200px;
+	max-width: 400px;
+	border-radius: 4px;
+	padding: 10px 20px 10px 20px;
+	position: relative;
+	white-space: pre-line;
+	color: #000;
+}
+.chatRoom_messageList-sentByMe:after {
+	content: " ";
+	position: absolute;
+	right: -10px;
+	top: 10px;
+	border-top: 10px solid transparent;
+	border-right: none;
+	border-left: 10px solid rgb(11, 128, 244, 0.1);
+	border-bottom: 10px solid transparent;
+}
+.chatRoom_messageList-notSentByMe {
+	float: left;
+	clear: both;
+	padding: 10px 20px 10px 20px;
+	box-sizing: border-box;
+	word-wrap: break-word;
+	margin-top: 10px;
+	background-color: #fff;
+	color: #000;
+	min-width: 200px;
+	max-width: 400px;
+	border-radius: 4px;
+	position: relative;
+	white-space: pre-line;
+}
+.chatRoom_messageList-notSentByMe:after {
+	content: " ";
+	position: absolute;
+	left: -10px;
+	top: 10px;
+	border-top: 10px solid transparent;
+	border-right: 10px solid #fff;
+	border-left: none;
+	border-bottom: 10px solid transparent;
+}
+
+.chatRoom_messageList-sentBySystem {
+	color: #808080 !important;
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #808080;
+	line-height: 0.1em;
+	margin: 10px 0 20px;
+	position: relative;
+
+	clear: both;
+}
+.chatRoom_chatRoom-systemMsg-msg {
+	background: #f2f2f2;
+	padding: 0 10px;
+}
+.chatRoom_msg-title-container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 6px;
+}
+.chatRoom_msg-title {
+	color: #979594;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.chatRoom_msg-date {
+	color: #666;
+	font-size: 12px;
+}
+.chatRoom_msg-own-date {
+	color: #979594;
+	font-size: 12px;
+}
+.chatRoom_msg-title-own {
+	color: #979594;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.chatRoom_messageList_container {
+	padding: 20px;
+	height: 100%;
+	overflow: auto;
+	overflow-x: hidden;
+	position: relative;
+	background-color: #f2f2f2;
+	/* border-right: 1px solid #3977f5; */
+}
+.chatRoom_messageInput_container {
+	border-top: 0.5px solid #3977f5;
+	padding: 8px 16px !important;
+	display: flex;
+	min-height: 50px;
+}
+.chatRoom_messageHeader-container {
+	background-color: #083b6e !important;
+	border-bottom: 0.5px solid #3977f5;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 16px;
+	color: #bcbcbc !important;
+}
+
+.chatRoom_chatRoomLaning-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	vertical-align: middle;
+	padding: 20px;
+}
+.chatRoom_chatRoomLanding_profileImg {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	object-fit: contain;
+	/* background-color: #1a1a1a; */
+	border: 1px solid #3977f5;
+}
+.chatRoom_chatRoomLanding_profileName {
+	font-size: 22px;
+	font-weight: 700;
+	color: #3977f5;
+	letter-spacing: 1.5px;
+	margin-bottom: 5px;
+}
+.chatRoom_chatRoomLanding_collegeName {
+	font-size: 16px;
+	font-weight: 700;
+	color: #999;
+	margin-bottom: 10px;
+}
+.chatRoom_chatRoomLanding_notice_primary {
+	color: #999;
+	margin-bottom: 20px;
+}
+.chatRoom_chatRoomLanding_notice_secondary {
+	padding: 15px;
+	color: #b32d00;
+	background-color: #ffcc00;
+	border-color: #cca300;
+	border-radius: 8px;
+	width: 75%;
+}
+
+.chatRoom_chatRoom-msgImage {
+	width: 120px;
+	height: 120px;
+	border: 1px solid #3977f5;
+	object-fit: cover;
+}
+
+.chatRoom_chatRoomInformation-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	vertical-align: middle;
+}
+.chatRoom_chatRoomInformation-profileImg {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	object-fit: contain;
+	border: 1px solid #3977f5;
+}
+.chatRoom_chatRoomInformation-profileName {
+	font-size: 18px;
+	font-weight: 700;
+	color: #3977f5;
+	letter-spacing: 2px;
+	margin-bottom: 8px;
+}
+.chatRoom_chatRoomInformation-collegeName {
+	font-size: 14px;
+	font-weight: 700;
+	color: #bcbcbc;
+}
+.chatRoom_link-danger {
+	cursor: pointer;
+	color: darkred;
+}
+.chatRoom_link-danger:hover {
+	color: rgb(177, 6, 6);
+	text-decoration: underline;
+}
+
+/* Ant override */
+.ant-badge-dot {
+	box-shadow: none !important;
+}

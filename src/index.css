@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: "Noto Sans Japanese", "Helvetica Neue", "Segoe UI",
+    "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+    "メイリオ", Meiryo, sans-serif;
+  background-color: #323639;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,0 +1,10 @@
+.region {
+	padding: 20px;
+	max-width: 1300px;
+	margin: auto;
+	background-color: transparent;
+	height: 90vh;
+	/* height: 100vh;
+    overflow: scroll; */
+	margin-top: 65px;
+}
