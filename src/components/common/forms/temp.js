@@ -44,7 +44,6 @@ export default function App_Form_Galk_Recruit() {
 	return (
 		
 		<Region>
-			
 			<iframe title="test-frame" src={pdfInfo} ref={viewer} type="application/pdf" />
 		</Region>
 
