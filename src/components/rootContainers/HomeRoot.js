@@ -10,6 +10,7 @@ const HomeRoot = ({ getCompanyDetails, userId, companyId }) => {
 	useEffect(() => {
 		if (userId && companyId) {
 			getCompanyDetails(companyId, userId);
+			console.log(companyId)
 		}
 	}, [userId, companyId]);
 	return <span>Home container</span>;
