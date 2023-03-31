@@ -38,7 +38,7 @@ const App = ({
 			getCompanyUserProfilePicture(auth.uid);
 		}
 	}, [auth.uid, companyId, auth.isLoaded]);
-
+	console.log(companyId);
 	if (auth.isLoaded) {
 		return (
 			
@@ -53,6 +53,7 @@ const App = ({
 						<ApplicationRoot />
 					</RestrictedRoute>
 					<Layout>
+						
 						<RestrictedRoute path="/Internship">
 							<InternshipRoot />
 						</RestrictedRoute>

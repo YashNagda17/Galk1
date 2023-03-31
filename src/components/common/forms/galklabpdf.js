@@ -11,7 +11,8 @@ const GalkLabPdf = function (doc,
     signature,
     d1,
     d2,
-    d3
+    d3,
+	operating_hours
     )
   {
 	
@@ -160,13 +161,13 @@ const GalkLabPdf = function (doc,
 	doc.setTextColor(0,0,0);
 	doc.setFont('times', 'bold');
 	doc.text(margin+10,160,'Plan');
-	doc.text(margin+60,160,'Engineer Operating Hours','center');
+	doc.text(margin+60,160,'Engineer Operating Hours per month','center');
 	doc.text(margin+113,160,'Monthly Fee','center');
 	doc.text(margin+160,160,'Payment Term','center');
 
 	doc.setFont('times', 'normal');
 	doc.text(margin+10,170,'Plan');
-	doc.text(margin+60,170,'Number/month','center');
+	doc.text(margin+60,170,operating_hours,'center');
 	doc.text(margin+113,170,'6500 USD (Excluding Tax)','center');
 	doc.text(margin+160,170,'The end of the previous','center');
 	doc.text(margin+160,176,'month of service (*)','center');
