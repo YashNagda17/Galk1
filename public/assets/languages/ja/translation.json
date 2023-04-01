@@ -295,6 +295,7 @@
 	"Company Address":"会社住所",
 	"Company Phone":"会社電話番号",
 	"Applicant Name":"申込書記入者氏名",
+	"recruitline1" : "当社は株式会社 Willings 提供のインド工科大 (以下、IITと記す)在学生及び出身者を対象とした企業とのマッチング支援サービス(サービス名: GALK) のインターンシップ利用を申し込みます。",
 	"Applicant Email":"ご担当者氏名",
 	"Galk Lab": "申込書（新規）",
 	"Contact Name":"ご担当者氏名",
@@ -340,5 +341,31 @@
 	"About Application": "申込について",
 	"Payment/Various discounts" : "支払い／各種割引について",
 	"Others": "その他",
-	"Cancellation/Refund" : "キャンセル／返金について"
+	"Cancellation/Refund" : "キャンセル／返金について",
+	"Application Form" : "申込書",
+	"Standard" : "スタンダード",
+	"6500 USD Excluding Tax ": "税抜き6500 USD",
+	"Note that If the service use starts in the middle of the month, the fee must be paid by the day before the service use starts.": "※サービス利用開始月の途中からの利用の場合、サービス利用開始日の前日までに料金をお支払いいただく必要があります。",
+	"The end of the previous month of service.": "サービス利用開始月の前月末まで",
+	" per month": " /月",
+	"Remittance Address": "振込先",
+	"Bank Name": "銀行名",
+	"Mizuho Bank": "みずほ銀行",
+	"Kabutocho 027": "カブト町027",
+	"Swift Code": "SWIFTコード",
+	"Branch": "支店名",
+	"A/c Number": "口座番号",
+	"A/c Name": "口座名義",
+	"Upload Signature": "署名をアップロード",
+	"Signature": "署名",
+	"The Company applies for the use of the lab-based development service, GALK provided by Willings,Inc. to support the matching of students and graduates of the Indian Institutes of Technology, hereinafter referred to as IIT, with companies.": "当社は、Willings,Inc.が提供する、IITの学生・卒業生と企業のマッチングを支援するラボ型開発サービス「GALK」の利用を申し込みます。",
+	"Galk Recruit Form": "GALK導入申込書",
+	"35% from 1st annual income of the student Excluding TAX": "税抜き1年目の学生の収入の35%から",
+	"Other": "その他",
+	"Payment at the end of the month following the date of application entry": "申込書の提出日の翌月末まで",
+	"Payment at the end of the month following the month the student accepts the offer": "学生がオファーを受け入れた月の翌月末まで",
+	"Start Date ": "開始日"
+
+
+
 }

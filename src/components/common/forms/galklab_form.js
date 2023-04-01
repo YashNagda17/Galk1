@@ -5,14 +5,12 @@ import jsPDF from 'jspdf';
 import { useTranslation } from "react-i18next";
 import GalkLabPdf from "./galklabpdf";
 import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Card, Row, Col, Button, Modal, Empty, Divider,Form } from "antd";
-
+import FireBase from './firebase';
+//create a form in material ui
 export default function App_Form_Galk_Lab() {
-
+  const companyId = useState().companyId;
   const [doe, setdoe] = useState('');
   const [companyname, setcomname] = useState('');
   const [companyaddress, setcaddress] = useState('');
@@ -33,7 +31,7 @@ export default function App_Form_Galk_Lab() {
   const [d2, setd2] = useState('');
   const [d3, setd3] = useState('');
   const { t } = useTranslation();
-  const theme = createTheme();
+  
 
   return (
 	<div>
@@ -43,25 +41,26 @@ export default function App_Form_Galk_Lab() {
 
 		<Region>
 		<>
-		<div>
-			<Card
+		<Card
 				
-				size="large"
-				bodyStyle={{ padding: 0 }}
-				style={{
-					height: "105%",
-					width: "100%",
-					overflowY: "auto",
-				}}
-			>
+			size="large"
+			bodyStyle={{ padding: 50 }}
+			style={{
+				height: "105%",
+				width: "100%",
+				overflowY: "auto",
+			}}
+		>
+		<div>
+			
         
           
-			<h2>
+			<h2><center>
 			
 				{t("Galk Lab")} {t("Application Form")}
-			</h2>
-			<h1> The Company applies for the use of the lab-based development service (service name: GALK) provided by Willings,Inc. to support the matching of students and graduates of 
-				the Indian Institutes of Technology (hereinafter referred to as IIT) with companies. </h1>
+			</center></h2>
+
+			<p>{t("The Company applies for the use of the lab-based development service, GALK provided by Willings,Inc. to support the matching of students and graduates of the Indian Institutes of Technology, hereinafter referred to as IIT, with companies.")} </p>
 
 			<Form id= "form1" onSubmit={ (e) => {
 				e.preventDefault();
@@ -75,15 +74,17 @@ export default function App_Form_Galk_Lab() {
 				
 				
 				doc.save("application_copy.pdf");
+				FireBase(doc, companyId);
 				}}
 			>
 			
-			
+
+
 				<tr>
-					<td><label htmlFor="doe">{t("Date of Entry")}</label></td>
+					<td><label htmlFor="doe">{t("Date of Entry")} </label></td>
 					<td><input type="date" id="doe" value={doe} onChange={(e) => setdoe(e.target.value)} required /></td>
 				</tr>
-
+				<h2>{"\n"}</h2>
 				<tr>
 					<td><label htmlFor="startdate">{t("Start Date")}</label></td>
 					<td><input type="date" id="startdate" value={startdate} onChange={(e) => setsd(e.target.value)} /></td>
@@ -197,8 +198,8 @@ export default function App_Form_Galk_Lab() {
           				/>
         			</Grid>
 					<Divider style={{'background-color':'black'}}/>
-				<h2>{t("Description of Work")}</h2>
-					<TextField
+				<h2><center>{t("Description of Work")}</center></h2>
+				<TextField
             			style = {{width: 700}}
             			id="d1"
             			name="d1"
@@ -207,7 +208,7 @@ export default function App_Form_Galk_Lab() {
             			autoComplete="given-name"
             			variant="standard"
 						value={d1}
-						onChange={(e) => setsd(e.target.value)}
+						onChange={(e) => setd1(e.target.value)}
           			/>
 
 					<TextField
@@ -234,36 +235,35 @@ export default function App_Form_Galk_Lab() {
 						onChange={(e) => setd3(e.target.value)}
           			/>
 					<Divider style={{'background-color':'black'}}/>
-					<h2> {t("Service Plan")}: Standard </h2>
+					<h2> {t("Service Plan")}: {t("Standard")} </h2>
 					<TextField
             			required
             			id="applicantname"
 						inputProps={{ type: 'number'}}
             			name="operating_hours"
 						style = {{width: 300}}
-            			label={t("Engineer operating hours ") + " per month"}
+            			label={t("Engineer operating hours ") + t(" per month")}
             			fullWidth
             			autoComplete="given-name"
             			variant="standard"
 						value={operating_hours}
 						onChange={(e) => setop(e.target.value)}
           			/>
-					<h1> {t("Monthly Fee")}: 6500 USD(Excluding Tax) </h1>
-					<h1> {t("Payment Term")} : The end of the previous month of service. 
-					Note that If the service use starts in the middle of the month, 
-					the fee must be paid by the day before the service use starts.</h1>
+					<h1> {t("Monthly Fee")}: {t("6500 USD Excluding Tax ")} </h1>
+					<h1> {t("Payment Term")} : {t("The end of the previous month of service.")} </h1> 
+					<h1> {t("Note that If the service use starts in the middle of the month, the fee must be paid by the day before the service use starts.")}</h1>
         			
 					<Divider style={{'background-color':'black'}}/>
             			
 						<h2> {t("Remittance Address")} </h2>
-						<h1> {t("Bank Name: Mizuho Bank")} </h1>
-						<h1> {t("Swift Code: MHCBJPJT")} </h1>
-						<h1> {t("Branch: Kabutocho(027)")} </h1>
-						<h1> {t("A/c Number: 2291403")} </h1>
-						<h1> {t("A/c Name: カ WILLINGS")} </h1>
+						<h1> {t("Bank Name")}: {t("Mizuho Bank")} </h1>
+						<h1> {t("Swift Code")} : {t("MHCBJPJT")} </h1>
+						<h1> {t("Branch")} : {t("Kabutocho 027")} </h1>
+						<h1> {t("A/c Number")} : {t("2291403")} </h1>
+						<h1> {t("A/c Name")} : {t("カ WILLINGS")} </h1>
        				
 						<Divider style={{'background-color':'black'}}/>
-				<h2> Important Summary </h2>
+				<h2><center> {t("Important Summary")} </center></h2>
 				<ol style={{ listStyleType: 'list-square' }}>
     				<li> {t("termlab1")} </li>
 					<li> {t("termlab2")} </li>
@@ -278,7 +278,7 @@ export default function App_Form_Galk_Lab() {
 				</ol>
 
 				<Divider style={{'background-color':'black'}}/>
-					<h2>Upload Signature</h2>
+					<h2>{t("Upload Signature")}</h2>
 					<h1> {t("Signature for the confirmation of aforementioned guidelines")}</h1>
 					<tr>
 						<td><label htmlFor="signature">{t("Signature")}</label></td>
@@ -297,8 +297,9 @@ export default function App_Form_Galk_Lab() {
 					<Divider style={{'background-color':'black'}}/>
 			<input type="submit" value={t("Submit")} />
 			</Form>
-			</Card>
+			
 			</div>
+			</Card>
 			</>
 		</Region>
 	</div>

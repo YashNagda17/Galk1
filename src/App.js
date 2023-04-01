@@ -31,11 +31,14 @@ const App = ({
 	getCompanyUserProfilePicture
 }) => {
 	const { companyId } = userProfile;
-
+	
+	
+	console.log(companyId);
 	useEffect(() => {
 		if (auth.isLoaded && auth.uid && companyId) {
 			getCompanyDetails(companyId, auth.uid);
 			getCompanyUserProfilePicture(auth.uid);
+			
 		}
 	}, [auth.uid, companyId, auth.isLoaded]);
 	console.log(companyId);

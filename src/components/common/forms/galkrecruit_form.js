@@ -5,14 +5,15 @@ import jsPDF from 'jspdf';
 import { useTranslation } from "react-i18next";
 import GalkRecruitPdf from './galkrecruitpdf';
 import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { Box} from '@mui/material';
+import { Card, Row, Col, Button, Modal, Empty, Divider,Form } from "antd";
+import FireBase from './firebase';
+
 
 export default function App_Form_Galk_Lab() {
-
+  const companyId = useState().companyId;
+  
+ 
   const [doe, setdoe] = useState('');
   const [companyname, setcomname] = useState('');
   const [companyaddress, setcaddress] = useState('');
@@ -39,9 +40,22 @@ export default function App_Form_Galk_Lab() {
 		</Helmet>
 
 		<Region>
-			<h1>
-				Galk Lab Form
-			</h1>
+		<Card
+				// title={`${t("internship_students_searchresult_studentfound", {
+				// 	count: studentList.length,
+				// })}`}
+				size="small"
+				bodyStyle={{ padding: 50 }}
+				style={{
+					height: "105%",
+					width: "100%",
+					overflowY: "auto",
+				}}
+			>
+			<h2><center>
+				{t("Galk Recruit Form")}
+				<p> {t("recruitline1")}</p>
+			</center></h2>
 			<form id= "form1" onSubmit={ (e) => {
 				e.preventDefault();
 				var doc = new jsPDF('p');
@@ -53,6 +67,7 @@ export default function App_Form_Galk_Lab() {
 					);
 				
 				doc.save("application_copy.pdf");
+				FireBase(doc, companyId);
 				}}
 			>
 			
@@ -61,10 +76,9 @@ export default function App_Form_Galk_Lab() {
 					<td><label htmlFor="doe">{t("Date of Entry")}</label></td>
 					<td><input type="date" id="doe" value={doe} onChange={(e) => setdoe(e.target.value)} required /></td>
 				</tr>
-
 				
 				
-					
+				
 					<TextField
             			required
             			id="companyname"
@@ -168,32 +182,47 @@ export default function App_Form_Galk_Lab() {
 						onChange={(e) => setcemail(e.target.value)}
           				/>
         			</Grid>
-					<td><label htmlFor="nostudents">{t("Number of Students to be Hired")}</label></td>
+					<TextField
+            			required
+            			id="applicantname"
+						inputProps={{ type: 'number'}}
+            			name="nostudents"
+						style = {{width: 300}}
+            			label={t("Number of Students to be Hired")}
+            			fullWidth
+            			autoComplete="given-name"
+            			variant="standard"
+						value={nostudents}
+						onChange={(e) => setnostudents(e.target.value)}
+          			/>
+
+					{/* <td ><label htmlFor="nostudents">{t("Number of Students to be Hired ")}</label></td>
 					<td><input type="number" id="nostudents" value={nostudents} onChange={(e) => setnostudents(e.target.value)} required /></td>
-				
+					<h2>{"\n"}</h2> */}
+				<h2>{"\n"}</h2>
 				<tr>
-					<td><label htmlFor="startdate">{t("Start Date")}</label></td>
+					<td><label htmlFor="startdate">{t("Start Date ")}</label></td>
 					<td><input type="date" id="startdate" value={startdate} onChange={(e) => setsd(e.target.value)} /></td>
 				</tr>
-
-				<h2> {t("Fee (Per Person)")}: Standard </h2>
+				<h2>{"\n"}</h2>
+				<h2> {t("Fee (Per Person)")}: {t("Standard")} </h2>
 					
-					<h1> {t("Consulting Fee")}: 9,800 USD (Excluding TAX) </h1>
-					<h1> {t("Referral fee")}: 35% from 1st annual income of the student (Excluding TAX) </h1>
-					<h1> {t("Payment Term")} : The end of the previous month of service. 
-					Note that If the service use starts in the middle of the month, 
-					the fee must be paid by the day before the service use starts.</h1>
+					<h1> {t("Consulting Fee")}: {t("6500 USD Excluding Tax ")} </h1>
+					<h1> {t("Payment Term")} : {t("Payment at the end of the month following the date of application entry")} </h1>
+					<h1> {t("Referral fee")}: {t("35% from 1st annual income of the student Excluding TAX")} </h1>
+					<h1> {t("Payment Term")} : {t("Payment at the end of the month following the month the student accepts the offer")} </h1>
+        			
         			
 					
             			
 						<h2> {t("Remittance Address")} </h2>
-						<h1> {t("Bank Name: Mizuho Bank")} </h1>
-						<h1> {t("Swift Code: MHCBJPJT")} </h1>
-						<h1> {t("Branch: Kabutocho(027)")} </h1>
-						<h1> {t("A/c Number: 2291403")} </h1>
-						<h1> {t("A/c Name: カ WILLINGS")} </h1>
+						<h1> {t("Bank Name")}: {t("Mizuho Bank")} </h1>
+						<h1> {t("Swift Code")} : {t("MHCBJPJT")} </h1>
+						<h1> {t("Branch")} : {t("Kabutocho 027")} </h1>
+						<h1> {t("A/c Number")} : {t("2291403")} </h1>
+						<h1> {t("A/c Name")} : {t("カ WILLINGS")} </h1>
        				
-				<h2> Important Summary </h2>
+				<h2><center> {t("Important Summary")} </center></h2>
 				<ol style={{ listStyleType: 'list-square' }}>
 					<h1 > {t("About Application")}</h1>
     				<li> {t("termrec1")} </li>
@@ -222,13 +251,13 @@ export default function App_Form_Galk_Lab() {
 					
 
 					
-				<h2>Upload Signature</h2>
+				<h2>{t("Upload Signature")}</h2>
 				<h1> {t("Signature for the confirmation of aforementioned guidelines")}</h1>
 				<tr>
 					<td><label htmlFor="signature">{t("Signature")}</label></td>
 					<td><input type="file" id="signature" onChange={(e) => {
 						const fileExtension = e.target.files[0].name.split(".").at(-1);
-						const allowedFileTypes = ["jpg"];
+						const allowedFileTypes = ["jpg","jpeg"];
 						
 						if (!allowedFileTypes.includes(fileExtension)) {
 							window.alert(`File does not support. Files type must be ${allowedFileTypes.join(", ")}`);
@@ -244,9 +273,12 @@ export default function App_Form_Galk_Lab() {
 
 
 			
-				
+			<h2>{"\n"}</h2>
+			<h2>{"\n"}</h2>
+
 			<input type="submit" value={t("Submit")} />
 			</form>
+			</Card>
 		</Region>
 	</div>
 	
